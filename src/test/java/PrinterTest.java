@@ -16,4 +16,10 @@ public class PrinterTest {
     public void hasPaper(){
         assertEquals(100, testPrinter.getPaper());
     }
+
+    @Test
+    public void printReducesPaper(){
+        testPrinter.print(10);
+        assertEquals(90, testPrinter.getPaper());
+    }
 }
