@@ -18,15 +18,18 @@ public class WaterBottleTest {
     }
     @Test
     public void drinkFunctionDepreciatesVolumeValueBy10(){
-        assertEquals(90, testWaterBottle.drink());
+        testWaterBottle.drink();
+        assertEquals(90, testWaterBottle.getVolume());
     }
     @Test
     public void empty(){
-        assertEquals(0, testWaterBottle.empty());
+        testWaterBottle.empty();
+        assertEquals(0, testWaterBottle.getVolume());
     }
     @Test
     public void fill(){
-        assertEquals(100, testWaterBottle.fill());
+        testWaterBottle.fill();
+        assertEquals(100, testWaterBottle.getVolume());
     }
 
 
