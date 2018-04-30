@@ -7,7 +7,9 @@ public class Printer {
     public int getPaper(){
         return this.paper;
     }
-    public int print(int copies){
-        return this.paper -= copies;
+    public void print(int copies, int pages) {
+        if ((pages * copies) <= this.paper) {
+            this.paper -= pages * copies;
+        }
     }
 }

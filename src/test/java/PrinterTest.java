@@ -18,8 +18,14 @@ public class PrinterTest {
     }
 
     @Test
-    public void printReducesPaper(){
-        testPrinter.print(10);
-        assertEquals(90, testPrinter.getPaper());
+    public void printReducesPaperRequirementLessThanPaper(){
+        testPrinter.print(10, 9);
+        assertEquals(10, testPrinter.getPaper());
+    }
+
+    @Test
+    public void printDoesNotReducePaperWhenRequirementTooHigh(){
+        testPrinter.print(10,12);
+        assertEquals(100, testPrinter.getPaper());
     }
 }
