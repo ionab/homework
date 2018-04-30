@@ -20,6 +20,10 @@ public class WaterBottleTest {
     public void drinkFunctionDepreciatesVolumeValueBy10(){
         assertEquals(90, testWaterBottle.drink());
     }
+    @Test
+    public void empty(){
+        assertEquals(0, testWaterBottle.empty());
+    }
 
 
 
