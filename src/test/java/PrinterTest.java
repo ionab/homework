@@ -28,4 +28,10 @@ public class PrinterTest {
         testPrinter.print(10,12);
         assertEquals(100, testPrinter.getPaper());
     }
+
+    @Test
+    public void refill(){
+        testPrinter.refill(100);
+        assertEquals(100, testPrinter.getPaper());
+    }
 }

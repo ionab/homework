@@ -12,4 +12,7 @@ public class Printer {
             this.paper -= pages * copies;
         }
     }
+    public void refill(int new_paper){
+        this.paper = new_paper;
+    }
 }
