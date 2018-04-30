@@ -9,5 +9,8 @@ public class Calculator {
     public int add(){
         return this.num1+this.num2;
     }
+    public int subtract(){
+        return this.num1-this.num2;
+    }
 }
 
