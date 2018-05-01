@@ -10,6 +10,7 @@ public class Printer {
     public int getPaper(){
         return this.paper;
     }
+
     public int getVolume(){
         return this.volume;
     }

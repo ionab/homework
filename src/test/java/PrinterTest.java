@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class PrinterTest {
-    private Printer testPrinter;
+    Printer testPrinter;
 
     @Before
     public void before(){

@@ -5,11 +5,11 @@ import static org.junit.Assert.assertEquals;
 
 public class WaterBottleTest {
 
-    private WaterBottle testWaterBottle;
+    WaterBottle testWaterBottle;
 
     @Before
     public void before() {
-        testWaterBottle = new WaterBottle(100);
+        testWaterBottle = new WaterBottle();
     }
 
     @Test
